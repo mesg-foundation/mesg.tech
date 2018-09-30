@@ -80,3 +80,19 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+.container-parent {
+  background-image: url("~/assets/Background/BGFeatures.svg");
+  background-size:cover;
+  background-position: bottom;
+  overflow: hidden;
+}
+@media only screen and (max-width: 768px) {
+  .container-parent {
+    background-image: none;
+  }
+}
+
+</style>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 406">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="299.7083" y1="500.5097" x2="300.7083" y2="501.5097" gradientTransform="matrix(-1440.0081 0 0 404.989 433021.9375 -202700.9062)">
+	<stop  offset="0" style="stop-color:#251440"/>
+	<stop  offset="1" style="stop-color:#491E8C"/>
+</linearGradient>
+<path class="st0" d="M1439.5,405c-45.6-137.7-172.8-198.8-381.7-183.2C744.5,245.1,582.2,9.3,326.3,39.2
+	C155.8,59.1,46.8,116.4-0.5,211l0-211l1440,0V405z"/>
+</svg>

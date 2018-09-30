@@ -61,7 +61,7 @@ a, button {
 .btn--primary:hover {
   background-color: #1F8C36;
   background-color: var(--green-cta-hover);
-  transition: 0.3s;
+  transition: all 0.4s ease-in-out;
 }
 
 .btn--purple {
@@ -74,7 +74,7 @@ a, button {
 .btn--purple:hover {
   background-color: #6F3DBF;
   background-color: var(--lighter-purple-hover);
-  transition: 0.3s;
+  transition: all 0.4s ease-in-out;
 }
 
 .btn--outline {
@@ -88,7 +88,7 @@ a, button {
   color: var(--pale-grey);
   background-color: #9452ff;
   background-color: var(--lighter-purple);
-  transition: 0.3s;
+  transition: all 0.4s ease-in-out;
 }
 
 @media only screen and (max-width: 768px) {

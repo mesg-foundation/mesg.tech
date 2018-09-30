@@ -45,7 +45,7 @@ p {
 
 .schema {
   max-height: calc(100vh - 12em);
-  min-height: 600px;
+  min-height: 520px;
 }
 
 .logo {
@@ -53,6 +53,15 @@ p {
   max-width: 60%;
   object-fit: contain;
 }
+
+.container-parent {
+  background-image: url("~/assets/Background/BGHeader.svg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  overflow: hidden;
+}
+
 @media only screen and (max-width: 768px) {
  header {
    text-align: center;
@@ -66,6 +75,9 @@ p {
  }
  .logo {
    margin-top: 0;
+ }
+ .container-parent {
+   background-image: none;
  }
 }
 

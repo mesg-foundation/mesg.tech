@@ -3,8 +3,8 @@
   <div class="container-parent">
       <div class="container-child" flex row space-between align-center>
         <div half flex column justify-center align-center>
-        <h2>Join our community</h2>
-        <p mb2>MESG is fueled by participation and is truly community-driven.
+          <h2>Join our community</h2>
+          <p mb2>MESG is fueled by participation and is truly community-driven.
           Take the reigns: building is in your hands. Start by building applications, connecting businesses, or contributing to the community.</p>
           <nav flex>
             <Button href="https://docs.mesg.com/" target="_blank" purple><i class="fas fa-code"></i> Developers</Button>
@@ -13,8 +13,8 @@
         <div class="line-separator" flex column justify-center align-center>
         </div>
         <div half flex column justify-center align-center>
-        <h2>Get involved today</h2>
-        <p mb2>Find out how you can get involved and start benefiting from this massively powerful tool today.</p>
+          <h2>Get involved today</h2>
+          <p mb2>Find out how you can get involved and start benefiting from this massively powerful tool today.</p>
           <nav flex>
             <Button href="https://goo.gl/forms/ifXyNfaQn8VC7pfu1" target="_blank" primary><i class="fas fa-chart-line"></i> Business</Button>
           </nav>
@@ -45,6 +45,13 @@ p {
 i {
   margin-right: 0.3em;
 }
+.container-parent {
+  background-image: url("~/assets/Background/BGCTA.svg");
+  background-size:cover;
+  background-position: top;
+  overflow: hidden;
+}
+
 
 .line-separator {
   height: 245px;
@@ -67,6 +74,9 @@ i {
     border-image-source: linear-gradient(to right, var(--lighter-purple) 0%, var(--green-cta) 100%);
     border-image-slice: 1;
   }
+    .container-parent {
+      background-image: none;
+    }
 }
 @media only screen and (max-width: 414px) {
   .line-separator {

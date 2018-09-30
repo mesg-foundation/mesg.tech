@@ -52,4 +52,17 @@ svg {
 .subtitle {
   text-align: center;
 }
+
+.container-parent {
+  background-image: url("~/assets/Background/BGBlockchain.svg");
+  background-size:cover;
+  background-position: bottom;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .container-parent {
+    background-image: none;
+  }
+}
 </style>
