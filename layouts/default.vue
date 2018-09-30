@@ -163,7 +163,7 @@ svg {
 }
 .container-child {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1440px;
   padding: 2.4em;
   margin: auto;
 }
@@ -180,7 +180,7 @@ svg {
   }
   .container-child {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1440px;
     padding: 2.4em;
   }
   [half] { width: calc(50% - 2.4em); }
