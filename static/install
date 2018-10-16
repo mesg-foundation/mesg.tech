@@ -4,6 +4,7 @@ command_exists() {
 	command -v "$@" > /dev/null 2>&1
 }
 
+# install docker if needed.
 if command_exists docker; then
   version=$(docker -v)
   echo "Docker already installed, using $version"
@@ -13,6 +14,7 @@ else
   sudo usermod -aG docker $(whoami)
 fi
 
+# get system info.
 system=$(uname -s | tr A-Z a-z)
 machine=$(uname -m)
 if [ $machine == "x86_64" ]; then
@@ -22,12 +24,21 @@ else
 fi
 
 echo "Installing MESG..."
+
+# fetch the latest version of mesg.
 link=$(curl -s https://api.github.com/repos/mesg-foundation/core/releases/latest | grep "browser_download_url.*$system.*$machine" | cut -d : -f 2,3 | tr -d \")
 
 path="/usr/local/bin/mesg-core"
 
+# install mesg-core binary.
 sudo curl --progress -L $link -o $path
 sudo chmod +x $path
 
+# install system services.
+git clone git@github.com:mesg-foundation/core.git /tmp/mesg-core
+mkdir -p ~/.mesg/systemservices
+cp -a /tmp/mesg-core/systemservices/_sources/. ~/.mesg/systemservices
+
+# stop & start mesg.
 $path stop
 $path start
