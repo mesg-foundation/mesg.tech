@@ -37,7 +37,7 @@ sudo chmod +x $path
 # install system services.
 git clone https://github.com/mesg-foundation/core.git /tmp/mesg-core
 mkdir -p ~/.mesg/systemservices
-cp -a /tmp/mesg-core/systemservices/_sources/. ~/.mesg/systemservices
+cp -a /tmp/mesg-core/systemservices/-sources/. ~/.mesg/systemservices
 
 # stop & start mesg.
 $path stop
