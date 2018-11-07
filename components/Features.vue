@@ -7,7 +7,7 @@
       </div>
       <div half flex column justify-center>
         <h2>Connect anything</h2>
-        <p>Build applications that easily connect any technologies together, including <strong>any</strong> blockchains or web APIs. Imagine the possibilities: any technology connecting to anything else with data through a decentralized network. There has never been a solution quite like this before.</p>
+        <p>Build applications that easily connect any technologies together, including <strong>any</strong> blockchains or Web APIs. Imagine the possibilities of any technology connecting to anything else with data through a decentralized network. There has never been a solution quite like this before.</p>
       </div>
     </div>
     <div class="container-child" flex row space-between>
