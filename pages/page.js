@@ -1,6 +1,8 @@
+import intercom from './intercom'
 export default x => {
   const dataFunc = typeof x === 'object' ? () => x : x
   return {
+    mixins: [intercom],
     head () {
       const { title, description } = dataFunc(this)
       return {
