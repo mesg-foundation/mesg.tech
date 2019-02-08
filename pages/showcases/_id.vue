@@ -1,56 +1,49 @@
 <template>
-  <div v-if="usecase">
-    <Header :usecase="usecase" id="introduction" class="dark"
+  <div>
+    <Header
+      :showcase="showcase"
+      id="introduction"
+      class="dark"
       :title="title"
       :description="description"
-      :schema="schema" 
+      :schema="schema"
       backTitle="Back to showcase"
-      backLink="/showcases" />
-    <Progress :usecase="usecase" id="progress" class="white"/>
-    <CTANext id="next" class="dark"/>
-  </div>
-  <div v-else>
-    <Header
-      id="introduction" class="dark"
-      :schema="schema404"
-      title="Hey dude,"
-      description="Looks like that page doesn't exist."
-      smallDescription="Click on the button below to go back to Home, let's act like nothing happened"
-      actionLink="/"
-      actionTitle="cd $HOME"
+      backLink="/showcases"
     />
+    <div class="container-parent">
+      <div class="container-child" flex column align-center>
+        <Showcase :showcase="showcase" />
+      </div>
+    </div>
+    <CTANext id="next" class="dark"/>
   </div>
 </template>
 
 <script>
-import Progress from '~/components/Progress'
-import CTANext from '~/components/cta/Next'
-import Header from '~/components/Header'
-import Schema404 from '~/components/schema/404'
-import SchemaNutshell from '~/components/schema/Nutshell'
-import page from '../page'
+import { mapGetters } from "vuex";
+import CTANext from "~/components/cta/Next";
+import Header from "~/components/Header";
+import SchemaNutshell from "~/components/schema/Nutshell";
+import Showcase from "~/components/Showcase";
+import page from "../page";
 export default {
   components: {
     Header,
-    Progress,
-    CTANext
+    CTANext,
+    Showcase
   },
   mixins: [
     page(self => ({
-      title: self.usecase.title,
-      description: self.usecase.text,
-      schema: SchemaNutshell
+      title: self.showcase.title,
+      description: self.showcase.resume,
+      schema: self.showcase.picture
     }))
   ],
   computed: {
-    usecases () {
-      return require('~/assets/usecases.json')
-    },
-    usecase () {
-      return this.usecases
-        .filter(x => x.id === this.$route.params.id)[0]
-    },
-    schema404 () { return Schema404 }
+    ...mapGetters(["showcases"]),
+    showcase() {
+      return this.showcases.filter(x => x.id === this.$route.params.id)[0];
+    }
   }
-}
+};
 </script>

@@ -108,7 +108,7 @@ h4 {
   color: #491e8c;
   color: var(--purple);
 }
-p {
+p, li {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-stretch: normal;
@@ -233,6 +233,8 @@ svg {
 [ml05] { margin-left: 0.6em!important; }
 [ml1] { margin-left: 1.2em!important; }
 [ml2] { margin-left: 2.4em!important; }
+[ma1] { margin: 1.2em!important; }
+[ma2] { margin: 2.4em!important; }
 
 
 .container-parent {
