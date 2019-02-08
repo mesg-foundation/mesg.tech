@@ -23,7 +23,8 @@
           </nav>
         </header>
         <div half flex column justify-center align-center>
-          <component :is="schema" class="schema" />
+          <img v-if="typeof schema === 'string'" :src="schema" :alt="title">
+          <component v-else :is="schema" class="schema" />
         </div>
       </div>
     </div>
@@ -44,7 +45,7 @@ export default {
       required: true
     },
     schema: {
-      type: Object
+      type: [Object, String]
     },
     backLink: {
       type: [String, Object]
