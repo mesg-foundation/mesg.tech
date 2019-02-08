@@ -67,13 +67,14 @@ h1, h2, h3, h4, a, button, label, input, textarea {
   font-weight:normal;
 }
 
-.link {
+a {
   font-weight: bold;
   color: #9452ff;
   color: var(--lighter-purple);
   text-decoration: none;
+  cursor: pointer;
 }
-.link:hover {
+a:hover {
   color: #5D28B2;
   color: var(--lighter-purple-hover);
   transition: calc(var(--animation-speed) * 0.1s) ease;
@@ -250,6 +251,7 @@ svg {
   padding: 2.4em;
 }
 
+img { max-width: 100%; }
 
 @media only screen and (max-width: 1440px) {
   .container-parent {
