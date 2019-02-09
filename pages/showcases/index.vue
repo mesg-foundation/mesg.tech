@@ -28,8 +28,7 @@ export default {
   mixins: [
     page({
       title: "MESG Showcase",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vestibulum orci eget convallis efficitur. Morbi urna massa, volutpat nec auctor vel, vehicula ac est.",
+      description: "Not sure about what can be build with MESG, this section will help you understand the potential of MESG and the wide range of possibilities offered.",
       schema: SchemaNutshell
     })
   ],

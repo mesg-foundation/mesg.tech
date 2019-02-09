@@ -10,7 +10,7 @@
         >
           <div>
             <img mb1 :src="showcase.picture" class="picture">
-            <h3 mb1>{{showcase.title}}</h3>
+            <h3>{{showcase.title}}</h3>
             <p mb1>{{showcase.resume}}</p>
           </div>
           <div flex row space-between>

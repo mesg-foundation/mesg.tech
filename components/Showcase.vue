@@ -32,7 +32,7 @@
     
     <h2>Who could benefit from that ?</h2>
 
-    <nav>
+    <nav mb2>
       <a v-for="(c, i) in showcase.companies" :key="i" :href="c.href" target="_blank">
         <img :src="c.logo" :alt="c.name"/>
       </a>
@@ -47,6 +47,7 @@
         outline
         target="_blank" mr1>
         {{ ressourceText(r.type) }}
+        <small v-if="r.text">{{ r.text }}</small>
       </Button>
     </nav>
     
@@ -81,10 +82,7 @@ export default {
 
 <style scopped>
 nav img {
-  height: 100px;
-}
-
-nav a {
-
+  height: 64px;
+  margin-right: 1em;
 }
 </style>
