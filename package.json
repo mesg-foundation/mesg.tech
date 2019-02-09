@@ -13,13 +13,13 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@nuxtjs/google-analytics": "^2.0.2",
-    "@nuxtjs/google-tag-manager": "^2.1.1",
-    "@nuxtjs/pwa": "^2.5.0",
+    "@nuxtjs/google-analytics": "^2.0.3",
+    "@nuxtjs/google-tag-manager": "^2.1.2",
+    "@nuxtjs/pwa": "^2.6.0",
     "@nuxtjs/sitemap": "^0.2.0",
-    "nuxt": "^1.4.2",
+    "nuxt": "^1.4.5",
     "vue-sticky-directive": "0.0.7",
-    "vue-tree-halower": "^1.7.3"
+    "vue-tree-halower": "^1.7.9"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.6",
@@ -27,6 +27,6 @@
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
     "eslint-plugin-vue": "^4.7.1",
-    "vue": "^2.5.17"
+    "vue": "^2.6.4"
   }
 }
