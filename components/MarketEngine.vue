@@ -11,7 +11,7 @@
           <div class="schema" flex column justify-center>
             <img src="~/assets/icons/Engine.svg" alt="MESG Engine" class="icon" mb2>
           </div>
-          <h2>MESG Engine</h2>
+          <h3>MESG Engine</h3>
           <p>
             The MESG Engine powers connectivity between Modules and other devices and applications. Control the flow of data and level of security between your whole stack of connected technologies.
           </p>
@@ -23,7 +23,7 @@
           <div class="schema" flex column justify-center>
             <img src="~/assets/icons/Marketplace.svg" alt="MESG Marketplace" class="icon" mb2>
           </div>
-          <h2>MESG Marketplace</h2>
+          <h3>MESG Marketplace</h3>
           <p>
             Save time by building applications using existing Modules in the MESG Marketplace. Or earn MESG Tokens by building Modules and offering them to the community.
           </p>
