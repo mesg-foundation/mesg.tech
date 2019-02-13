@@ -1,10 +1,6 @@
 <template>
   <section>
     <div class="container-parent">
-      <div class="container-child-title" flex column justify-center align-center>
-          <h2>ATO Listing</h2>
-          <div class="separator-orange"></div>
-      </div>
       <div class="container-child">
         <div class="limiter">
           <div class="container-table100">
@@ -177,7 +173,7 @@ export default {
   width: 100% !important;
 }
 
-.row:hover {
+.row:not(.header):hover {
   background-color: #ececff;
   cursor: pointer;
 }
