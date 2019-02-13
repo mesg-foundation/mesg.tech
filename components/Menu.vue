@@ -9,6 +9,7 @@
           <nuxt-link to="/engine" class="menu-nav">Engine</nuxt-link>
           <nuxt-link to="/features" class="menu-nav">Features</nuxt-link>
           <nuxt-link to="/token" class="menu-nav">Token</nuxt-link>
+          <nuxt-link to="/stats" class="menu-nav">Stats</nuxt-link>
           <nuxt-link to="/team" class="menu-nav">Team</nuxt-link>
           <nuxt-link to="/roadmap" class="menu-nav" mr1>Roadmap</nuxt-link>
           <Button href="https://docs.mesg.com/guide/start-here/quick-start-guide.html" small primary>Get Started</Button>
@@ -37,8 +38,6 @@ nav {
   z-index:1;
   position: absolute;
   width: 100%;
-  border-bottom: solid 0.025em #491e8c;
-  border-bottom: solid 0.025em var(--purple);
 }
 
 .menu {

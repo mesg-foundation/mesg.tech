@@ -7,7 +7,7 @@
           {{ backTitle }}
         </nuxt-link>
       </nav>
-      <div class="container-child" :class="{ fullHeight }" flex row space-between column-reverse-responsive>
+      <div v-if="title" class="container-child" :class="{ fullHeight }" flex row space-between column-reverse-responsive>
         <header half flex column justify-center>
           <h1 v-html="title"></h1>
           <slot v-if="$slots.default" />
@@ -37,11 +37,9 @@ export default {
   props: {
     title: {
       type: String,
-      required: true
     },
     description: {
       type: String,
-      required: true
     },
     schema: {
       type: Object
@@ -82,11 +80,14 @@ export default {
 
 .container-parent {
   z-index:-1;
-  padding-top: 5.4em;
   background-image:linear-gradient(155deg, rgba(73, 30, 140, 1) 0%, rgba(73, 30, 140, 0.95) 100%), url("~/assets/Contact.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
+}
+
+.container-child {
+  padding-top: 5.4em;
 }
 
 .small {
@@ -134,10 +135,11 @@ p {
    margin-bottom:2.4em;
  }
  .container-parent {
-   padding-top: 2.4em;
+   padding: 0;
  }
  .container-child {
    max-width: 600px;
+   padding-top: 2.4em;
  }
  .actions a {
     margin: auto;
@@ -156,7 +158,7 @@ p {
      max-width: 280px;
      margin-bottom:1.8em;
    }
-   .container-parent {
+   .container-child {
      padding-top: 0em;
    }
  }
