@@ -7,16 +7,18 @@
             <div class="wrap-table100">
                 <div class="table">
                   <div class="row header">
-                    <div class="cell">Day</div>
-                    <div class="cell">MESG Available</div>
-                    <div class="cell">ETH</div>
+                    <div class="cell">Date</div>
+                    <div class="cell">MESG</div>
                     <div class="cell">BTC</div>
+                    <div class="cell">ETH</div>
+                    <div class="cell">USDT</div>
                   </div>
                   <div v-for="(item, index) in ato" :key="index" class="row">
-                    <div class="cell" data-title="Day">{{ item.date }}</div>
-                    <div class="cell" data-title="MESG Available">{{ item.mesg }} </div>
-                    <div class="cell" data-title="ETH">{{ item.eth }}</div>
+                    <div class="cell" data-title="Date">{{ item.date }}</div>
+                    <div class="cell" data-title="MESG">{{ item.mesg }} </div>
                     <div class="cell" data-title="BTC">{{ item.btc }}</div>
+                    <div class="cell" data-title="ETH">{{ item.eth }}</div>
+                    <div class="cell" data-title="USDT">{{ item.usdt }}</div>
                   </div>
                 </div>
             </div>
@@ -40,9 +42,13 @@ export default {
         .then((resp) => { return resp.json() })
         .then((ato) => {
           this.ato = ato.map((item) => {
-            const s = item.date.split('/')
-            item.date = [s[1], s[0], s[2]].join('/')
-            return item
+            return {
+              date: item.date,
+              mesg: item.mesg.toFixed(2),
+              eth: item.eth.toFixed(2),
+              btc: item.btc.toFixed(2),
+              usdt: item.usdt.toFixed(2)
+            }
           })
         })
     }
