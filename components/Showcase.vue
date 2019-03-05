@@ -30,7 +30,7 @@
       </div>
     </div>
     
-    <h2>Who could benefit from that ?</h2>
+    <h2>Who could benefit from this ?</h2>
 
     <nav mb2>
       <a v-for="(c, i) in showcase.companies" :key="i" :href="c.href" target="_blank">
@@ -38,7 +38,7 @@
       </a>
     </nav>
 
-    <h2>Ressources</h2>
+    <h2>Resources</h2>
 
     <nav>
       <Button 
