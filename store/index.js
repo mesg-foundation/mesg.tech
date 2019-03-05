@@ -2,23 +2,23 @@ export const state = () => ({
   showcases: [
     {
       id: 'stripe-erc20',
-      title: 'An app for buying crypto with fiat',
+      title: 'Directly buy crypto with fiat',
       picture: 'https://cdn-images-1.medium.com/max/2000/1*_lYOgjsGw7BDJh58YUdQtw.jpeg',
-      resume: 'Connect a payment processor to any blockchain with MESG and finally accept fiat for your tokens improving your user experience',
+      resume: 'Connect a payment processor to any blockchain with MESG and finally accept fiat for your tokens, improving your user experience',
       schema: 'https://cdn-images-1.medium.com/max/2000/1*_lYOgjsGw7BDJh58YUdQtw.jpeg',
-      challenges: 'Buying crypto either for investment or to actually use a product is something complicated with a lot of friction for users reducing massivly adoption.',
+      challenges: 'Buying crypto either for investment or in order to actually use a product, is a complicated process with lots of friction for users, resulting in a massive hurdle for adoption.',
       goals: [
-        'Create an application that can accept payment from a fiat payment gateway such as bank or payment providers like Stripe and deliver tokens to the buyers'
+        'Create an application that can accept payments from a fiat payment gateway such as bank, or payment providers like Stripe, and deliver tokens directly to buyers'
       ],
       benefits: [
-        'Every project could be now able to use the benefits of blockchain and tokenize everything without having the barrier to entry that blockchains has now.',
-        'New way of doing ICO',
-        'Gaming industry could have their token in the game that is actual token based on ERC20 or the different objects to craft or whatever based on the ERC721.',
-        'Shop could do their inventory on blockchain and still selling this with a simple credit cart system'
+        'Any project is now able to use the benefits of blockchain and tokenize everything without having the steep barrier to entry that blockchains currently have.',
+        'New way of doing ICOs',
+        'Those within the gaming industry could have their token within their game be an actual token based on ERC20, or can generate and sell unique objects to digital collectables based on an ERC721 smart contract.',
+        'Shops could manage their inventory on the blockchain and continue selling collectables or currencies with a simple credit cart system'
       ],
       opportunities: [
         'Extension to other tokens such as ERC721',
-        'Support of many different native blockchain token'
+        'Support of many different native blockchain tokens'
       ],
       companies: [
         { href: 'https://www.coinbase.com', logo: 'https://coinlist.me/wp-content/uploads/2017/11/Coinbase-GDAX-ETC-Withdrawals-Bitcoin.png', name: 'coinbase' },
@@ -26,7 +26,7 @@ export const state = () => ({
         { href: 'https://www.bitstamp.net/', logo: 'https://www.forexbrokerz.com/files/1501155659bitstamp%20logo.jpg', name: 'Bitstamp' },
         { href: 'https://www.binance.com', logo: 'https://cryptobijbel.be/wp-content/uploads/2018/02/binance-logo.png', name: 'Binance' }
       ],
-      ressources: [
+      resources: [
         { type: 'blog', href: 'https://medium.com/mesg/an-app-to-buy-crypto-with-fiat-95c658ad74b7' },
         { type: 'forum', href: 'https://forum.mesg.com/t/stripe-to-erc20/206' },
         { type: 'video', href: 'https://drive.google.com/file/d/1WfZZ9tcNJAEdKms9LKynR1rlle4rS_Ix/view?usp=sharing ' },
@@ -36,25 +36,25 @@ export const state = () => ({
     },
     {
       id: 'monetize-api',
-      title: 'The death of the subscription plan',
+      title: 'Replace subscription models with on-demand payments',
       picture: 'https://cdn-images-1.medium.com/max/2000/1*6-MtpPSDCw7eezvHa-NaMw.jpeg',
       schema: 'https://forum.mesg.com/uploads/default/original/1X/b1c56391ac876b910262718c070822f6aeefd25b.jpeg',
       resume: 'New innovations featuring superior monetization avenues which benefit both sellers and consumers could be the start of the transition away from one-size-fits-all subscription plans.',
-      challenges: 'Today, most businesses like SaaS products uses recurrent billing and complex systems to accept payment for the features they deliver. Cryptocurrencies can be a good use here where instead of having to manage complex subscription systems they could set a price for every features they want to expose.',
+      challenges: 'Today, most businesses like SaaS products uses recurrent billing and complex systems to accept payments for the features they deliver. Cryptocurrencies can be of good use here where, instead of having to manage complex subscription systems, they could set a price for each features they want to expose.',
       goals: [
-        'Accept payment through blockchain technology',
-        'Trigger a certain task when a payment is done',
-        'Submit a proof of the execution and the actual results of the executions to the user'
+        'Accept payments through blockchain technology',
+        'Trigger a certain task when a payment is made',
+        'Submit a proof of the execution to the user with the actual results of the executions'
       ],
       benefits: [
-        'New model of monetization that can open the competition',
-        'Focus on the actual key values proposition of the business without the need to manage its monetization',
+        'A new model of monetization that can open up the competition',
+        'Focusing on the actual key value proposition of a business without needing to manage its monetization',
         'Reducing the complexity of products and increasing the potential reusability of them'
       ],
       opportunities: [
         'Creation of new innovative business models',
-        'Human resources reductions (no need for an extra payment system developer team)',
-        'Reducing friction for users (pay as you go instead of big packages)'
+        'Human resources reductions (no need for a payment-system developer team)',
+        'Reducing friction for users (pay-as-you-go instead of only big packages)'
       ],
       companies: [
         { href: 'https://sendgrid.com', logo: 'https://500.co/wp-content/uploads/2015/02/sendgrod-vert.png', name: 'Sendgrid' },
@@ -70,23 +70,23 @@ export const state = () => ({
     },
     {
       id: 'erc20-monitoring',
-      title: 'How to monitor ERC20 transactions',
+      title: 'Monitor any ERC20 transactions',
       picture: 'https://cdn-images-1.medium.com/max/2000/1*vwF6o7PeSsRQlKRd6u-TzA.jpeg',
       schema: 'https://forum.mesg.com/uploads/default/original/1X/dd3e09715411d90152680d614d77abd9bce19a37.png',
       resume: 'There’s immense power in data. With analytics tools, anyone can use data to create of massive efficiencies, forge new avenues of income or even generate new businesses altogether.',
-      challenges: 'With the rise of ICOs and businesses willing to accept cryptocurrencies or developping with token, the ecosystem needs to evolve and needs some tools to actually have some metrics about what is hapening.',
+      challenges: 'With the rise of ICOs, development with tokens, and businesses willing to accept cryptocurrencies, the fast-evolving ecosystem needs tools to actually provide metrics about what is happening on the blockchain.',
       goals: [
-        'Connect to all the token transfers',
-        'Keep track of these informations',
+        'Connect to all token transfers',
+        'Manage and keep track of this information',
         'Visualize these transactions'
       ],
       benefits: [
-        'Having all necessary metrics related to your token',
-        'Can extract patterns looking at the graphs, like when there is a high volume of transfer (meaning that it might be a bot)'
+        'Having all necessary metrics related to your token available',
+        'You can extract patterns by looking at the graphs, like when there is a high transfer volume (potentially indicating that it might be a bot)'
       ],
       opportunities: [
         'ICOs could be able to monitor the volume they are doing during their ICO',
-        'Connecting some AI system to be able to predict the future transfers and predict the price',
+        'Connecting AI systems to be able to predict future transfers and token prices',
         'Expand to ERC721 and have a tool to monitor how your ERC721 is performing'
       ],
       companies: [
