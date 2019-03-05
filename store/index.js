@@ -62,7 +62,7 @@ export const state = () => ({
         { href: 'https://firebase.com', logo: 'https://gregorykelleher.com/user/pages/01.blog/angularjs_project_2/firebase_logo.png', name: 'Firebase' },
         { href: 'https://www.twilio.com/', logo: 'http://www.zdnet.de/wp-content/uploads/2014/12/twilio-logo.jpg', name: 'Twilio' }
       ],
-      ressources: [
+      resources: [
         { type: 'blog', href: 'https://medium.com/mesg/the-death-of-the-subscription-plan-2ffbcbf521b4' },
         { type: 'forum', href: 'https://forum.mesg.com/t/monetizing-api-through-blockchain/223' },
         { type: 'source', href: 'https://github.com/antho1404/pegasys-hackathon' }
@@ -95,7 +95,7 @@ export const state = () => ({
         { href: 'https://www.bitstamp.net/', logo: 'https://www.forexbrokerz.com/files/1501155659bitstamp%20logo.jpg', name: 'Bitstamp' },
         { href: 'https://www.binance.com', logo: 'https://cryptobijbel.be/wp-content/uploads/2018/02/binance-logo.png', name: 'Binance' }
       ],
-      ressources: [
+      resources: [
         { type: 'blog', href: 'https://medium.com/mesg/how-to-monitor-important-erc20-transactions-ead35309ba9c' },
         { type: 'forum', href: 'https://forum.mesg.com/t/analytics-tool-for-erc20-transfers/209' },
         { type: 'demo', href: 'http://erc20-analytics.demo.mesg.com:3000', text: 'login "test", password: "test"' },
