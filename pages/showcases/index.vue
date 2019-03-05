@@ -28,7 +28,7 @@ export default {
   mixins: [
     page({
       title: "MESG Showcase",
-      description: "Not sure about what can be build with MESG, this section will help you understand the potential of MESG and the wide range of possibilities offered.",
+      description: "Not sure about what to build on MESG? Here we explore the potential of MESG through examples, to inspire builders with the wide range of possibilities offered.",
       schema: SchemaNutshell
     })
   ],
