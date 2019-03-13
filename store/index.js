@@ -8,20 +8,20 @@ export const state = () => ({
       schema: 'https://cdn-images-1.medium.com/max/2000/1*_lYOgjsGw7BDJh58YUdQtw.jpeg',
       challenges: 'Buying crypto either for investment or in order to actually use a product, is a complicated process with lots of friction for users, resulting in a massive hurdle for adoption.',
       goals: [
-        'Create an application that can accept payments from a fiat payment gateway such as bank, or payment providers like Stripe, and deliver tokens directly to buyers'
+        'Create an application that can accept payments from a fiat payment gateway such as bank, or payment providers like Stripe and deliver tokens directly to buyers'
       ],
       benefits: [
-        'Any project is now able to use the benefits of blockchain and tokenize everything without having the steep barrier to entry that blockchains currently have.',
+        'Any project is now able to use the benefits of blockchain and tokenize anything without first having to deal with the steep barrier to entry that blockchains currently require.',
         'New way of doing ICOs',
-        'Those within the gaming industry could have their token within their game be an actual token based on ERC20, or can generate and sell unique objects to digital collectables based on an ERC721 smart contract.',
-        'Shops could manage their inventory on the blockchain and continue selling collectables or currencies with a simple credit cart system'
+        'Those within the gaming industry could have their token featured as currency within their game be an actual token based on ERC20, or can generate and sell unique objects like digital collectables based on an ERC721 smart contracts.',
+        'Shops can manage their inventory on the blockchain and continue selling collectables or currencies with a simple credit cart system'
       ],
       opportunities: [
         'Extension to other tokens such as ERC721',
         'Support of many different native blockchain tokens'
       ],
       companies: [
-        { href: 'https://www.coinbase.com', logo: 'https://coinlist.me/wp-content/uploads/2017/11/Coinbase-GDAX-ETC-Withdrawals-Bitcoin.png', name: 'coinbase' },
+        { href: 'https://www.coinbase.com', logo: 'https://coinlist.me/wp-content/uploads/2017/11/Coinbase-GDAX-ETC-Withdrawals-Bitcoin.png', name: 'Coinbase' },
         { href: 'https://www.kraken.com/', logo: 'http://gettoknowbitcoin.com/wp-content/uploads/2014/03/kraken.png', name: 'Kraken' },
         { href: 'https://www.bitstamp.net/', logo: 'https://www.forexbrokerz.com/files/1501155659bitstamp%20logo.jpg', name: 'Bitstamp' },
         { href: 'https://www.binance.com', logo: 'https://cryptobijbel.be/wp-content/uploads/2018/02/binance-logo.png', name: 'Binance' }
@@ -40,21 +40,21 @@ export const state = () => ({
       picture: 'https://cdn-images-1.medium.com/max/2000/1*6-MtpPSDCw7eezvHa-NaMw.jpeg',
       schema: 'https://forum.mesg.com/uploads/default/original/1X/b1c56391ac876b910262718c070822f6aeefd25b.jpeg',
       resume: 'New innovations featuring superior monetization avenues which benefit both sellers and consumers could be the start of the transition away from one-size-fits-all subscription plans.',
-      challenges: 'Today, most businesses like SaaS products uses recurrent billing and complex systems to accept payments for the features they deliver. Cryptocurrencies can be of good use here where, instead of having to manage complex subscription systems, they could set a price for each features they want to expose.',
+      challenges: 'Today, most businesses like SaaS products use complex recurrent billing systems to accept payments for the features they deliver. Instead of needing to manage complex subscription systems, cryptocurrencies could be used to let users pay only for the features they want to expose.',
       goals: [
-        'Accept payments through blockchain technology',
-        'Trigger a certain task when a payment is made',
+        'Accept payments with blockchain technology',
+        'Trigger a certain task when a payment has been made',
         'Submit a proof of the execution to the user with the actual results of the executions'
       ],
       benefits: [
         'A new model of monetization that can open up the competition',
         'Focusing on the actual key value proposition of a business without needing to manage its monetization',
-        'Reducing the complexity of products and increasing the potential reusability of them'
+        'Reducing the complexity of products while increasing the potential reusability of them'
       ],
       opportunities: [
         'Creation of new innovative business models',
-        'Human resources reductions (no need for a payment-system developer team)',
-        'Reducing friction for users (pay-as-you-go instead of only big packages)'
+        'Human resources reductions (no need to manage a payment-system development team)',
+        'Reducing friction for users (pay-as-you-go instead of only offering big packages)'
       ],
       companies: [
         { href: 'https://sendgrid.com', logo: 'https://500.co/wp-content/uploads/2015/02/sendgrod-vert.png', name: 'Sendgrid' },
@@ -70,27 +70,27 @@ export const state = () => ({
     },
     {
       id: 'erc20-monitoring',
-      title: 'Monitor any ERC20 transactions',
+      title: 'Monitor ERC20 transactions',
       picture: 'https://cdn-images-1.medium.com/max/2000/1*vwF6o7PeSsRQlKRd6u-TzA.jpeg',
       schema: 'https://forum.mesg.com/uploads/default/original/1X/dd3e09715411d90152680d614d77abd9bce19a37.png',
       resume: 'There’s immense power in data. With analytics tools, anyone can use data to create of massive efficiencies, forge new avenues of income or even generate new businesses altogether.',
       challenges: 'With the rise of ICOs, development with tokens, and businesses willing to accept cryptocurrencies, the fast-evolving ecosystem needs tools to actually provide metrics about what is happening on the blockchain.',
       goals: [
         'Connect to all token transfers',
-        'Manage and keep track of this information',
-        'Visualize these transactions'
+        'Collect and manage token transfer information',
+        'Visualize transaction data'
       ],
       benefits: [
         'Having all necessary metrics related to your token available',
-        'You can extract patterns by looking at the graphs, like when there is a high transfer volume (potentially indicating that it might be a bot)'
+        'You can extract patterns by looking at the graphs, like when there is a high transfer volume (potentially indicating that there is a bot)'
       ],
       opportunities: [
-        'ICOs could be able to monitor the volume they are doing during their ICO',
+        'ICOs could be able to monitor the volume their token is experiencing during their ICO',
         'Connecting AI systems to be able to predict future transfers and token prices',
-        'Expand to ERC721 and have a tool to monitor how your ERC721 is performing'
+        'Expand to ERC721 and have a tool which monitors how your ERC721 is performing'
       ],
       companies: [
-        { href: 'https://www.coinbase.com', logo: 'https://coinlist.me/wp-content/uploads/2017/11/Coinbase-GDAX-ETC-Withdrawals-Bitcoin.png', name: 'coinbase' },
+        { href: 'https://www.coinbase.com', logo: 'https://coinlist.me/wp-content/uploads/2017/11/Coinbase-GDAX-ETC-Withdrawals-Bitcoin.png', name: 'Coinbase' },
         { href: 'https://www.kraken.com/', logo: 'http://gettoknowbitcoin.com/wp-content/uploads/2014/03/kraken.png', name: 'Kraken' },
         { href: 'https://www.bitstamp.net/', logo: 'https://www.forexbrokerz.com/files/1501155659bitstamp%20logo.jpg', name: 'Bitstamp' },
         { href: 'https://www.binance.com', logo: 'https://cryptobijbel.be/wp-content/uploads/2018/02/binance-logo.png', name: 'Binance' }
