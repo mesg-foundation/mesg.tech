@@ -37,8 +37,8 @@ export default {
     }
   },
   methods: {
-    fetchATOListing() {
-      fetch('https://application-ato.mesg.com/atoListing')
+    fetchATDPriceLog() {
+      fetch('https://atd.app.mesg.com/priceLog')
         .then((resp) => { return resp.json() })
         .then((ato) => {
           this.ato = ato.map((item) => {
@@ -55,7 +55,7 @@ export default {
   },
 
   beforeMount() {
-    this.fetchATOListing()
+    this.fetchATDPriceLog()
   }
 }
 </script>
@@ -68,7 +68,6 @@ export default {
 
 .container-table100 {
   width: 100%;
-
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;

@@ -14,7 +14,7 @@
           <a href="https://forum.mesg.com" target="_blank" class="nav" mr2>Get Help</a>
           <a href="https://docs.mesg.com" target="_blank" class="nav" mr2>Documentation</a>
           <a href="https://github.com/mesg-foundation/awesome#readme" target="_blank" class="nav" mr2>Marketplace</a>
-          <nuxt-link to="/stats" class="nav" mr2>ATO Statistics</nuxt-link>
+          <nuxt-link to="/stats" title="Algorithmic Token Distribution" class="nav" mr2>ATD Statistics</nuxt-link>
           <a href="https://goo.gl/forms/ifXyNfaQn8VC7pfu1" target="_blank" class="nav">Get in touch</a>
         </div>
       </div>

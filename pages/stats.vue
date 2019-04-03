@@ -4,7 +4,7 @@
       :title="title"
       :description="description" />
     <div class="white">
-      <ATOListing />
+      <ATDStats />
     </div>
     <CTATokenUpdated id="token updated" class="dark"/>
   </div>
@@ -12,19 +12,19 @@
 
 <script>
 import Header from '~/components/Header'
-import ATOListing from '~/components/ATOListing'
+import ATDStats from '~/components/ATDStats'
 import CTATokenUpdated from '~/components/cta/TokenUpdated'
 import page from './page'
 export default {
   components: {
     Header,
-    ATOListing,
+    ATDStats,
     CTATokenUpdated,
   },
   mixins: [
     page({
-      title: 'Algorithmic Token Offering',
-      description: 'Statistics related to the Algorithmic Token Offering'
+      title: 'Algorithmic Token Distribution',
+      description: 'Statistics related to the Algorithmic Token Distribution'
     })
   ]
 }
