@@ -15,7 +15,6 @@
       --animation-speed: 1;
     }
     </style>
-    <Token class="token-bar"/>
     <Menu class="menu-bar"/>
     <nuxt/>
     <Footer/>
@@ -28,7 +27,7 @@ import Footer from '~/components/Footer'
 export default {
   components: {
     Menu,
-    Footer
+    Footer,
   }
 }
 </script>

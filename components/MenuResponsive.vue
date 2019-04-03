@@ -1,5 +1,5 @@
 <template>
-  <div class="menu-responsive" flex column justify-center>
+  <div class="menu-responsive" :class="{ sticky }" flex column justify-center @scroll="updateSticky">
     <div class="nav-burger" flex row space-between justify-center align-center>
       <a href ="/">
         <MESGLogoHorizontalWhite class="logo" />
@@ -24,7 +24,7 @@
           <nuxt-link to="/token" class="menu-nav" flex column justify-center align-center>Token</nuxt-link>
           <nuxt-link to="/team" class="menu-nav" flex column justify-center align-center>Team</nuxt-link>
           <nuxt-link to="/roadmap" class="menu-nav" mb2 flex column justify-center align-center>Roadmap</nuxt-link>
-          <Button href="https://docs.mesg.com/guide/start-here/quick-start-guide.html" class="button" small primary flex column justify-center align-center>Get Started</Button>
+          <Button href="https://docs.mesg.com/guide/start-here/quick-start-guide.html" class="button" small outline flex column justify-center align-center>Get Started</Button>
         </nav>
     </div>
   </transition>
@@ -41,8 +41,20 @@ export default {
   },
   data () {
     return {
-      open: false
+      open: false,
+      sticky: false
     }
+  },
+  methods: {
+    updateSticky (e) {
+      this.sticky = window.scrollY > 145
+    }
+  },
+  mounted () {
+    window.addEventListener('scroll', this.updateSticky);
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.updateSticky);
   }
 }
 
@@ -171,6 +183,9 @@ a {
       transform: translateY(0);
     }
   }
+  .nav-burger {
+    border-bottom: solid 1px #251440;
+  }
 }
 @media only screen and (max-width: 768px) {
   @keyframes appear-in {
@@ -196,13 +211,13 @@ a {
     padding-right:1.8em;
     padding-top:0.6em;
     padding-bottom:0.6em;
-    border-bottom: solid 1px #251440;
   }
   .logo {
     width:114px;
   }
-  .menu-responsive {
+  .menu-responsive.sticky {
     position: fixed;
+    top: 0;
   }
 }
 

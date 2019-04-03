@@ -68,7 +68,8 @@ module.exports = {
   ** Plugins
   */
   plugins: [
-    { src: '~/plugins/vue-sticky-directive', ssr: false }
+    { src: '~/plugins/directives/sticky', ssr: false },
+    { src: '~/plugins/directives/show-only-children' },
   ],
   /*
   ** Build configuration
@@ -77,8 +78,8 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    extend (config, { isDev, isClient }) {
-      if (isDev && isClient) {
+    extend (config, { isDev }) {
+      if (isDev && process.client) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
