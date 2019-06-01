@@ -21,7 +21,7 @@
     "@nuxtjs/sitemap": "^0.2.0",
     "@nuxtjs/style-resources": "^0.1.2",
     "nuxt": "^2.6.3",
-    "vue-sticky-directive": "0.0.7"
+    "vue-sticky-directive": "0.0.8"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.6",
