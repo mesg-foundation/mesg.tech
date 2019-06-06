@@ -60,7 +60,7 @@
       <Container>
         <Feature
           :src="require('~/assets/token/token-distribution.svg')"
-          title="Token distribution"
+          title="Token initial distribution"
           action="Check out our roadmap"
           :to="links.roadmap"
         >
