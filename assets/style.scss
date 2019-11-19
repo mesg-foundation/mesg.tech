@@ -137,6 +137,13 @@ li {
     left: 0;
     margin-right: calc(var(--margin) / 2);
   }
+   i {
+      line-height: 23px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin-right: calc(var(--margin) / 2);
+    }
 }
 
 /*
