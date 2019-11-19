@@ -34,7 +34,7 @@
                   }}
                 </p>
                 <Tag mb1>{{ latestReward.category }}</Tag>
-                <p>
+                <p class="icon-list">
                   <i class="fas fa-user-circle"></i>
                   {{ latestReward.name }}
                 </p>
@@ -83,8 +83,8 @@
             compact
           >
             <template v-slot:item_title="{ item }">
-              <i class="fas fa-award" :class="{ gold: item.rewarded, white: !item.rewarded }"></i>
-              <nuxt-link :to="`/contributions/${item.id}`">
+              <nuxt-link :to="`/contributions/${item.id}`" class="icon-list">
+                <i class="fas fa-award" :class="{ gold: item.rewarded, white: !item.rewarded }"></i>
                 {{
                 item.title
                 }}
@@ -94,7 +94,7 @@
               <Tag>{{ item.category }}</Tag>
             </template>
             <template v-slot:item_name="{ item }">
-              <p>
+              <p class="icon-list">
                 <i class="fas fa-user-circle"></i>
                 {{ item.name }}
               </p>
@@ -158,7 +158,10 @@
               </div>
               <hr mb1 />
               <ul>
-                <li v-for="(list, j) in community.list" :key="j" v-html="list">{{ list }}</li>
+                <li v-for="(list, j) in community.list" :key="j" v-html="list" class="icon-list">
+                  <span></span>
+                  {{ list }}
+                </li>
               </ul>
             </Card>
           </div>
@@ -325,6 +328,10 @@ export default {
       border-top-right-radius: 6px;
       background-color: var(--purple);
     }
+    .icon-list {
+      padding-left: calc(var(--margin) + 10px);
+      display: block;
+    }
   }
   .user-rewarded {
     margin-right: 0;
@@ -358,7 +365,8 @@ export default {
   }
   table {
     .date {
-      font-size: 15px;
+      font-size: 12px;
+      font-weight: bold;
       color: var(--light-purple);
     }
   }
@@ -378,16 +386,6 @@ export default {
 #help {
   hr {
     width: auto;
-  }
-  li:before {
-    content: "";
-    width: 7px;
-    height: 7px;
-    margin-right: calc(var(--margin) - 5px);
-    background-color: var(--deep-purple);
-    border-radius: 100%;
-    display: inline-block;
-    vertical-align: middle;
   }
 }
 
