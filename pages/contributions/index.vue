@@ -387,6 +387,9 @@ export default {
   hr {
     width: auto;
   }
+  .icon-list {
+    margin-bottom: calc(var(--margin) / 2);
+  }
 }
 
 i {
