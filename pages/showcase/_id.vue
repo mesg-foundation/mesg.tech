@@ -219,6 +219,10 @@ li.opportunitie:last-child {
   width: auto;
 }
 
+.btn--secondary:last-child {
+  margin-right: 0 !important;
+}
+
 .label {
   border-radius: 3px;
   padding: calc(var(--margin) / 2);
