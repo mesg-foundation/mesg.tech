@@ -11,11 +11,11 @@
       </template>
       <div class="details">
         <Tag mr2>{{ contribution.category }}</Tag>
-        <p v-if="contribution.profile">
+        <p v-if="contribution.profile" class="icon-list">
           <i class="fas fa-user-circle"></i>
           <a :href="contribution.profile" target="_blank">{{ contribution.name }}</a>
         </p>
-        <p v-else>
+        <p v-else class="icon-list">
           <i class="fas fa-user-circle"></i>
           {{ contribution.name }}
         </p>
@@ -208,12 +208,12 @@ export default {
 
 .details {
   display: flex;
-  p {
-    i {
-      margin-right: calc(var(--margin) / 2);
-      font-size: 18px;
-      color: var(--light-purple);
-    }
+  i {
+    font-size: 18px;
+    color: var(--light-purple);
+  }
+  .icon-list {
+    padding-left: calc(var(--margin) + 10px);
   }
 }
 
