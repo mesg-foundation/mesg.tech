@@ -115,7 +115,31 @@ li {
   font-size: 17px;
   font-weight: normal;
   color: var(--text-color);
+  &:last-child {
+    margin-bottom: 0!important;
+  }
 }
+.icon-list {
+  position: relative;
+  padding-left: var(--margin);
+  span {
+    width: 8px;
+    height: 8px;
+    background-color: var(--deep-purple);
+    border-radius: 100%;
+    position: absolute;
+    left: 1px;
+    top: 8px;
+    margin-right: calc(var(--margin) / 2);
+  }
+  img {
+    position: absolute;
+    left: 0;
+    margin-right: calc(var(--margin) / 2);
+  }
+}
+
+/*
 .list::before {
   content: "";
   width: 7px;
@@ -128,6 +152,7 @@ li {
 .list p {
   margin-left:22px;
 }
+*/
 
 .infos {
   font-size: 14px;
