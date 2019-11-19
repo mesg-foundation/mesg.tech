@@ -1,6 +1,6 @@
 <template>
   <ul mb2>
-    <li mb1 v-for="(item, i) in items" :key="i">
+    <li mb1 v-for="(item, i) in items" :key="i" class="icon-list">
       <span :style="`background-color: ${item.color}`"></span>
       {{ item.title }}
     </li>
@@ -18,17 +18,14 @@ export default {
 };
 </script>
 
-<style scoped>
-ul {
-  list-style: none;
-}
-
-li span {
-  width: 20px;
-  height: 20px;
-  border-radius: 3px;
-  display: inline-block;
-  margin-right: calc(var(--margin) / 2);
-  vertical-align: middle;
+<style lang="scss" scoped>
+.icon-list {
+  padding-left: calc(var(--margin) * 2);
+  span {
+    width: 23px;
+    height: 23px;
+    left: 0;
+    top: 0;
+  }
 }
 </style>
