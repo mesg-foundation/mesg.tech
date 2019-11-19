@@ -19,8 +19,11 @@
                         <i class="far fa-external-link" />
                       </a>
                     </h5>
-                    <ul class="items">
-                      <li v-for="(item, l) in goal.list" :key="l">{{item}}</li>
+                    <ul>
+                      <li v-for="(item, l) in goal.list" :key="l" class="icon-list" mb1>
+                        <span></span>
+                        {{item}}
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -100,10 +103,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-ul {
-  list-style: none;
-}
-
 #roadmap h3 {
   width: 80px;
   height: 42px;
@@ -125,7 +124,7 @@ ul {
 #roadmap h5 {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: calc(var(--margin) - 8px);
+  margin-bottom: var(--margin);
 }
 
 .years {
@@ -193,21 +192,6 @@ ul {
 
 .goals > li {
   margin-bottom: calc(var(--margin) + 12px);
-}
-
-.items li {
-  font-size: 17px;
-  font-weight: normal;
-}
-
-.items li::before {
-  content: "";
-  width: 7px;
-  height: 7px;
-  margin-right: calc(var(--margin) - 5px);
-  background-color: var(--deep-purple);
-  border-radius: 100%;
-  display: inline-block;
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
