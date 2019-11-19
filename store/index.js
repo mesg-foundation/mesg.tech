@@ -853,80 +853,80 @@ export const getters = {
         icon: "fas fa-code",
         category: "Development",
         list: [
-          "Improve the Engine <a href='https://github.com/mesg-foundation/engine/issues?q=label%3A%22help+wanted%22+is%3Aissue+is%3Aopen' target='_blank' class='link'>(1)</a> & <a href='https://github.com/orgs/mesg-foundation/projects/' target='_blank' class='link'>(2)</a>",
-          "Feedback on <a href='https://github.com/mesg-foundation/engine/pulls' target='_blank' class='link'>PRs</a> & <a href='https://forum.mesg.com/c/development' target='_blank' class='link'>Forum</a>",
-          "Build apps using MESG",
-          "..."
+          "<span></span>Improve the Engine <a href='https://github.com/mesg-foundation/engine/issues?q=label%3A%22help+wanted%22+is%3Aissue+is%3Aopen' target='_blank' class='link'>(1)</a> & <a href='https://github.com/orgs/mesg-foundation/projects/' target='_blank' class='link'>(2)</a>",
+          "<span></span>Feedback on <a href='https://github.com/mesg-foundation/engine/pulls' target='_blank' class='link'>PRs</a> & <a href='https://forum.mesg.com/c/development' target='_blank' class='link'>Forum</a>",
+          "<span></span>Build apps using MESG",
+          "<span></span>..."
         ]
       },
       {
         icon: "fas fa-layer-plus",
         category: "Dev UX",
         list: [
-          "Improve the <a href='https://docs.mesg.com/' target='_blank' class='link'>documentation</a>",
-          "Create <a href='https://docs.mesg.com/tutorials/' target='_blank' class='link'>tutorials</a>",
-          "Improve the <a href='https://github.com/mesg-foundation/cli/issues?q=label%3A%22help+wanted%22+is%3Aissue+is%3Aopen' target='_blank' class='link'>CLI</a>",
-          "..."
+          "<span></span>Improve the <a href='https://docs.mesg.com/' target='_blank' class='link'>documentation</a>",
+          "<span></span>Create <a href='https://docs.mesg.com/tutorials/' target='_blank' class='link'>tutorials</a>",
+          "<span></span>Improve the <a href='https://github.com/mesg-foundation/cli/issues?q=label%3A%22help+wanted%22+is%3Aissue+is%3Aopen' target='_blank' class='link'>CLI</a>",
+          "<span></span>..."
         ]
       },
       {
         icon: "fas fa-comment-alt-edit",
         category: "Communication",
         list: [
-          "Write <a href='https://handbook.mesg.com/assets/#brand-assets' target='_blank' class='link'>articles</a> about MESG",
-          "Create informative diagrams",
-          "Improve the <a href='https://docs.mesg.com/' target='_blank' class='link'>documentation</a>",
-          "..."
+          "<span></span>Write <a href='https://handbook.mesg.com/assets/#brand-assets' target='_blank' class='link'>articles</a> about MESG",
+          "<span></span>Create informative diagrams",
+          "<span></span>Improve the <a href='https://docs.mesg.com/' target='_blank' class='link'>documentation</a>",
+          "<span></span>..."
         ]
       },
       {
         icon: "fas fa-pencil-ruler",
         category: "Design",
         list: [
-          "Create MESG <a href='https://handbook.mesg.com/assets/#brand-assets' target='_blank' class='link'>illustrations</a>",
-          "Create a GIF",
-          "Create graphic concepts",
-          "..."
+          "<span></span>Create MESG <a href='https://handbook.mesg.com/assets/#brand-assets' target='_blank' class='link'>illustrations</a>",
+          "<span></span>Create a GIF",
+          "<span></span>Create graphic concepts",
+          "<span></span>..."
         ]
       },
       {
         icon: "fas fa-bullhorn",
         category: "Marketing",
         list: [
-          "Share on social media",
-          "Create advertisements",
-          "Add MESG to product sites",
-          "..."
+          "<span></span>Share on social media",
+          "<span></span>Create advertisements",
+          "<span></span>Add MESG to product sites",
+          "<span></span>..."
         ]
       },
       {
         icon: "fas fa-coins",
         category: "Token",
         list: [
-          "Update info on exchanges",
-          "Submit <a href='https://handbook.mesg.com/assets/#brand-assets' target='_blank' class='link'>logo</a> on apps",
-          "List on a DEX (Kyber, Bancor...)",
-          "..."
+          "<span></span>Update info on exchanges",
+          "<span></span>Submit <a href='https://handbook.mesg.com/assets/#brand-assets' target='_blank' class='link'>logo</a> on apps",
+          "<span></span>List on a DEX (Kyber, Bancor...)",
+          "<span></span>..."
         ]
       },
       {
         icon: "fas fa-handshake-alt",
         category: "Partnerships",
         list: [
-          "Introduce projects to MESG",
-          "Test or use partner projects",
-          "Send a collaboration idea",
-          "..."
+          "<span></span>Introduce projects to MESG",
+          "<span></span>Test or use partner projects",
+          "<span></span>Send a collaboration idea",
+          "<span></span>..."
         ]
       },
       {
         icon: "fas fa-user-headset",
         category: "Support",
         list: [
-          "Answer community questions",
-          "Contribute on the <a href='https://forum.mesg.com/c/development' target='_blank' class='link'>forum</a>",
-          "Suggest best practices",
-          "..."
+          "<span></span>Answer community questions",
+          "<span></span>Contribute on the <a href='https://forum.mesg.com/c/development' target='_blank' class='link'>forum</a>",
+          "<span></span>Suggest best practices",
+          "<span></span>..."
         ]
       }
     ]
