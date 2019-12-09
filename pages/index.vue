@@ -200,6 +200,9 @@ export default {
   max-width: 100%;
 }
 
+.test {
+}
+
 #token img {
   width: 100px;
   height: 100px;
