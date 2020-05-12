@@ -138,22 +138,6 @@
                 <i class="fal fa-external-link-alt"></i>
               </div>
             </Card>
-          </a>
-          <nuxt-link :to="links.enterprise" half fill-height>
-            <Card bordered p2 class="enterprise">
-              <span flex align-center>
-                <i class="fal fa-globe"></i>
-              </span>
-              <div class="content">
-                <h3 mb1>Enterprise</h3>
-                <p
-                  mb2
-                >Build ultra-efficient services and applications with confidence using technical, advisory and design support from the MESG Enterprise Team.</p>
-              </div>
-              <div flex class="icon">
-                <i class="fal fa-long-arrow-alt-right"></i>
-              </div>
-            </Card>
           </nuxt-link>
         </div>
       </Container>
@@ -323,34 +307,6 @@ ul {
       right: calc(#{$margin} * 2);
     }
   }
-  .enterprise {
-    border-bottom-color: $orange;
-    transition: 0.1s ease-in;
-    span {
-      text-align: center;
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      border-radius: 6px;
-      background-color: $orange-light;
-      i {
-        font-size: 30px;
-        color: $orange;
-      }
-    }
-    .icon {
-      position: absolute;
-      bottom: calc(#{$margin} * 2);
-      right: calc(#{$margin} * 2);
-    }
-  }
-  .content {
-    margin-left: calc(#{$margin} * 4);
-  }
-  .icon {
-    text-align: right;
-  }
-}
 
 @media only screen and (max-width: $mobile-breakpoint) {
   #steps {
